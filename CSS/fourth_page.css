@@ -1,0 +1,143 @@
+.photo {
+    width: 100%;
+    height: 23em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.photo-design {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.protofile {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+.protofile-one {
+    background-image: url(../images/portfolio-1.jpg);
+}
+
+.protofile-two {
+    background-image: url(../images/portfolio-2.jpg);
+}
+
+.protofile-three {
+    background-image: url(../images/portfolio-3.jpg);
+}
+
+.photo-head {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.photo-title {
+    padding-top: 20px;
+    color: grey;
+}
+
+.serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 15em;
+    margin: auto;
+}
+
+.serv-title {
+    font-size: 90px;
+    color: grey;
+    opacity: .2;
+    font-weight: bold;
+}
+
+.serv-descrip {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(105 90 90);
+    position: relative;
+    bottom: 37px;
+}
+
+@media (max-width:370px) {
+    .serv-title {
+        font-size: 60px;
+    }
+
+    .serv-descrip {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width:500px) and (max-width:1000px) {
+    .photo {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: start;
+        padding: 4em;
+
+    }
+
+    .photo-design {
+        width: 40%;
+
+    }
+
+    .grow {
+        flex-grow: 1;
+    }
+
+    .protofile {
+        height: 200px;
+    }
+
+    .photo-head {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .photo-title {
+        padding-top: 0;
+    }
+}
+
+@media (min-width:320px) and (max-width:500px) {
+    .photo {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .photo-design {
+        width: 75%;
+    }
+
+    .protofile {
+        height: 150px;
+    }
+
+    .photo-head {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .photo-title {
+        padding-top: 10px;
+    }
+}
